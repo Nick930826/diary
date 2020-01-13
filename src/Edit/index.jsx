@@ -44,7 +44,6 @@ const Edit = () => {
       params['id'] = id
       axios.post('/update', params).then(res => {
         Toast.success('修改成功')
-        history
       })
       return
     }
