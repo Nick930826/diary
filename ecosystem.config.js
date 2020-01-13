@@ -26,8 +26,8 @@ module.exports = {
       user: 'root',
       host: '47.99.134.126',
       ref: 'origin/master',
-      repo: 'git@github.com:Nick930826/nick-blog.git',
-      path: '/workspace/nick-blog',
+      repo: 'git@github.com:Nick930826/diary.git', // 自己的代码仓库地址
+      path: '/workspace/diary',
       'post-deploy': 'git reset --hard && git checkout master && git pull && rm -rf dist/static && npm install && npm run build && pm2 startOrReload ecosystem.config.js',
       env: {
         NODE_ENV: 'production'

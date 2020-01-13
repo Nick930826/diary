@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Toast } from 'antd-mobile'
 
 console.log('process.NODE_ENV', process.env.NODE_ENV)
-axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//localhost:7001' : ''
+axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//localhost:7001' : '//47.99.134.126:7002'
 axios.defaults.withCredentials = true
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers.post['Content-Type'] = 'application/json'
