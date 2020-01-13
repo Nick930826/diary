@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { List, InputItem, TextareaItem, DatePicker, ImagePicker, Button, Toast } from 'antd-mobile'
+import { InputItem, TextareaItem, DatePicker, ImagePicker, Button, Toast } from 'antd-mobile'
 import moment from 'moment'
 import axios from '../utils/axios'
 import { getQueryString } from '../utils'
@@ -53,7 +53,7 @@ const Edit = () => {
   }
 
   return (<div className='diary-edit'>
-    <List renderHeader={() => '编辑日记'}>
+    {/* <List renderHeader={() => '编辑日记'}>
       <InputItem
         clear
         placeholder="请输入标题"
@@ -83,7 +83,7 @@ const Edit = () => {
         multiple={false}
       />
       <Button type='primary' onClick={() => publish()}>发布</Button>
-    </List>
+    </List> */}
   </div>)
 }
 
