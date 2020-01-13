@@ -81,14 +81,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": []
-  },
+  "browserslist": [
+    "defaults",
+    "not dead"
+  ],
   "devDependencies": {
     "babel-plugin-import": "^1.13.0"
   },
