@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavBar, Icon, List } from 'antd-mobile'
+import { NavBar, Icon } from 'antd-mobile'
 import { useHistory } from 'react-router-dom'
 import { getQueryString } from '../utils'
 import axios from '../utils/axios'
@@ -33,11 +33,11 @@ const Detail = () => {
         <img onClick={() => history.push(`/edit?id=${detail.id}`)} style={{ width: 26 }} src="//s.weituibao.com/1578721957732/Edit.png" alt=""/>
       ]}
     >{detail.title || ''}</NavBar>
-    <List renderHeader={() => `${detail.date} 晴天`} className="my-list">
+    {/* <List renderHeader={() => `${detail.date} 晴天`} className="my-list">
       <List.Item wrap>
         {detail.content}
       </List.Item>
-    </List>
+    </List> */}
   </div>)
 }
 
